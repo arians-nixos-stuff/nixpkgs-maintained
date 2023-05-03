@@ -1,0 +1,14 @@
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v2
+      - name: "build"
+        run: |
+          sleep 20
+          echo "$GITHUB_SHA"
+          echo "$GITHUB_REF"
