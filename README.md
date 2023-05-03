@@ -1,4 +1,5 @@
 # nixpkgs-maintained
+## yes
 
 test
 
