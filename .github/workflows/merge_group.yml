@@ -1,12 +1,7 @@
 on:
-  # Build the initial pull request
-  pull_request:
-    branches: [main]
-  # Build the merge attempt with up tp date main branch
   merge_group:
-    branches: [main]
 jobs:
-  build:
+  build-merge-group:
     runs-on: ubuntu-latest
     steps:
       - name: "checkout"
