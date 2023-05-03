@@ -1,7 +1,7 @@
 on:
   merge_group:
 jobs:
-  build:
+  build-merge-group:
     runs-on: ubuntu-latest
     steps:
       - name: "checkout"
